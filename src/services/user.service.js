@@ -14,5 +14,20 @@ export const newUser = async (body) => {
   return data;
 };
 
+//this method for login user
+
+export const loginUser = async (body) => {
+  const data = await User.findOne({ email: body.email });
+
+  if (data) {
+    if (bcrypt.compareSync(body.password, data.password)) {
+      return data;
+    } else {
+      throw new Error('you have enter invalid Password');
+    }
+  } else {
+    throw new Error('you have enter invalid emailId.');
+  }
+};
 
 
