@@ -14,4 +14,7 @@ router.post('', newUserValidator, userController.newUser);
 //route to user forget password
 router.post('/forget',userController.forgetPassword);
 
+//route to user resetPassword 
+router.post('/reset',userAuth,userController.resetPassword);
+
 export default router;
