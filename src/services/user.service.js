@@ -1,5 +1,11 @@
+import { error } from '@hapi/joi/lib/base';
 import User from '../models/user.model';
-
+import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
+import HttpStatus from 'http-status-codes';
+import { userAuth } from '../middlewares/auth.middleware';
+import userModel from '../models/user.model';
+require('dotenv').config();
 
 
 
