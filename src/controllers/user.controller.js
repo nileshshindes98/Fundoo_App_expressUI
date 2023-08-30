@@ -23,5 +23,26 @@ export const loginUser = async (req, res, next) => {
   }
 };
 
+/**
+ * Controller to create a new user
+ * @param  {object} req - request object
+ * @param {object} res - response object
+ * @param {Function} next
+ */
+
+//this is for new user registration
+
+export const newUser = async (req, res, next) => {
+  try {
+    const data = await UserService.newUser(req.body);
+    res.status(HttpStatus.CREATED).json({
+      code: HttpStatus.CREATED,
+      data: data,
+      message: 'User created successfully'
+    });
+  } catch (error) {
+    next(error);
+  }
+};
 
 
