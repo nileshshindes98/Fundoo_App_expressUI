@@ -14,3 +14,7 @@ info: Connected to the database. {"timestamp":"2023-08-30T17:02:35.995Z"}
 >>>>>>> New_User_login
 info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-08-30T17:24:42.602Z"}
 info: Connected to the database. {"timestamp":"2023-08-30T17:24:44.790Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-08-30T17:28:31.041Z"}
+info: Connected to the database. {"timestamp":"2023-08-30T17:28:33.229Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-08-30T17:28:44.743Z"}
+info: Connected to the database. {"timestamp":"2023-08-30T17:28:47.369Z"}
