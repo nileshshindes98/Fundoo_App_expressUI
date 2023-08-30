@@ -30,4 +30,22 @@ export const loginUser = async (body) => {
   }
 };
 
+export const forgetPassword = async (body) => {
+  const data = await User.findOne({ email: body.email });
+  if (data) {
+    var token = jwt.sign(
+      { email: data.email, _id: data._id },
+      process.env.SECRET_KEY
+    );
+    // console.log("getting token or not ------------------>",token);
+    return token;
+  } else {
+    throw new Error(
+      `please registered your email 
+      ${body.email}, is not registered in the database. Please register your email.`
+    );
+  }
+};
+
+
 

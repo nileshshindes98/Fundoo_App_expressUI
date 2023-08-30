@@ -11,4 +11,7 @@ router.post('/login',userController.loginUser);
 //route to create a new user
 router.post('', newUserValidator, userController.newUser);
 
+//route to user forget password
+router.post('/forget',userController.forgetPassword);
+
 export default router;
