@@ -45,4 +45,21 @@ export const newUser = async (req, res, next) => {
   }
 };
 
+//method for forgetPassword
+export const forgetPassword = async (req, res, next) => {
+  try {
+    const data = await UserService.forgetPassword(req.body);
+    res.status(HttpStatus.ACCEPTED).json({
+      code: HttpStatus.ACCEPTED,
+      data: data,
+      message: 'User forget Password successfully'
+    });
+  } catch (error) {
+    res.status(HttpStatus.BAD_REQUEST).json({
+      code: HttpStatus.BAD_REQUEST,
+      message: `${error}`
+    });
+    next(error);
+  }
+};
 
