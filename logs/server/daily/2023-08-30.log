@@ -1,3 +1,16 @@
+<<<<<<< HEAD
 info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-08-30T14:41:56.911Z"}
 info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-08-30T17:18:56.399Z"}
 info: Connected to the database. {"timestamp":"2023-08-30T17:18:58.712Z"}
+=======
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-08-30T14:41:56.911Z"}
+info: Connected to the database. {"timestamp":"2023-08-30T14:41:59.308Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-08-30T16:56:02.403Z"}
+info: Connected to the database. {"timestamp":"2023-08-30T16:56:07.498Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-08-30T17:00:43.761Z"}
+info: Connected to the database. {"timestamp":"2023-08-30T17:00:45.921Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-08-30T17:02:33.772Z"}
+info: Connected to the database. {"timestamp":"2023-08-30T17:02:35.995Z"}
+>>>>>>> New_User_login
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-08-30T17:24:42.602Z"}
+info: Connected to the database. {"timestamp":"2023-08-30T17:24:44.790Z"}
