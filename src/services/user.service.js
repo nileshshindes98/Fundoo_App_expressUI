@@ -47,5 +47,22 @@ export const forgetPassword = async (body) => {
   }
 };
 
+//for reset password
 
+export const resetPassword = async (body ) => {
+  
+  const saltRounds = 10;
+  const salt = bcrypt.genSaltSync(saltRounds);
+  const hash = bcrypt.hashSync(body.password, salt);
+  body.password = hash;
+
+  const data = await User.findByIdAndUpdate( body.id,
+     {new: true});
+  
+  if (!data) {
+    throw new Error('Enter valid Id ');
+  } else {
+    return data;
+}
+};;
 
